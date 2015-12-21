@@ -1,7 +1,7 @@
 # Sneaker
 
-[![Build Status](https://travis-ci.org/codahale/sneaker.svg?branch=master)](https://travis-ci.org/codahale/sneaker)
-[![Apache V2 License](http://img.shields.io/badge/license-Apache%20V2-blue.svg)](https://github.com/codahale/sneaker/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/gdb/sneaker.svg?branch=master)](https://travis-ci.org/gdb/sneaker)
+[![Apache V2 License](http://img.shields.io/badge/license-Apache%20V2-blue.svg)](https://github.com/gdb/sneaker/blob/master/LICENSE)
 
 *Setec Astronomy? Keynote Shogun.*
 
@@ -41,8 +41,8 @@ future without warning.**
 ## Installing
 
 ```shell
-go get -d -u github.com/codahale/sneaker
-cd $GOPATH/src/github.com/codahale/sneaker
+go get -d -u github.com/gdb/sneaker
+cd $GOPATH/src/github.com/gdb/sneaker
 make install
 sneaker version
 ```
@@ -263,7 +263,7 @@ The final result is the concatentation of the following:
 
 ## Architecture
 
-![Sneaker Architecture](https://raw.githubusercontent.com/codahale/sneaker/master/architecture.png)
+![Sneaker Architecture](https://raw.githubusercontent.com/gdb/sneaker/master/architecture.png)
 
 ## Threat Model
 
