@@ -29,3 +29,10 @@ godep: ${GOPATH}/bin/godep
 ${GOPATH}/bin/godep:
 	go get -u github.com/tools/godep
 	go install github.com/tools/godep
+
+SHA1 = $(shell git rev-parse HEAD)
+travis:
+	# Put the binary under build/current and build/<sha1>
+	mkdir -p "build/$(SHA1)" build/current
+	go build -o build/current/sneaker ./cmd/sneaker/*
+	cp build/current/sneaker "build/$(SHA1)"
