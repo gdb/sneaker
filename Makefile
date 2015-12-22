@@ -25,10 +25,10 @@ vendor: godep
 	godep save ./...
 
 # Bootstrap godep
-godep: ${GOPATH}/bin/godep
-${GOPATH}/bin/godep:
-	go get -u github.com/tools/godep
-	go install github.com/tools/godep
+# godep: ${GOPATH}/bin/godep
+# ${GOPATH}/bin/godep:
+# 	go get -u github.com/tools/godep
+#	go install github.com/tools/godep
 
 SHA1 = $(shell git rev-parse HEAD)
 travis:
