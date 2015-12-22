@@ -33,6 +33,7 @@ vendor: godep
 SHA1 = $(shell git rev-parse HEAD)
 travis:
 	# Put the binary under build/current and build/<sha1>
-	mkdir -p "build/$(SHA1)" build/current
+	mkdir -p build/current
+	git remote show origin |grep 'Fetch URL'|sed 's/.*Fetch URL: //' > build/current/origin
 	go build -o build/current/sneaker ./cmd/sneaker/*
-	cp build/current/sneaker "build/$(SHA1)"
+	cp -r build/current build/$(SHA1)
